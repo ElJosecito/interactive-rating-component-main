@@ -1,0 +1,197 @@
+//## Colors
+
+//### Primary
+
+$Orange: hsl(25, 97%, 53%);
+
+//### Neutral
+
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.card_container{
+    width: 1440px;
+    height: 100vh;
+    background-color: $VeryDarkBlue;
+    color: $White;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card{
+    width: 420px;
+    height: 420px;
+    background: rgb(37,41,52);
+    background: linear-gradient(180deg, rgba(37,41,52,1) 30%, rgba(25,29,40,1) 100%);
+    border-radius: 35px;
+    margin: 20px;
+  
+}
+
+.card_text_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+
+    .svg_container{
+        margin: 0 0 30px 0;
+        width: 50px;
+        height: 50px;
+        background-color: $DarkBlue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        
+    }
+    h1{
+        font-size: 30px;
+        font-family: 'Overpass', sans-serif;
+        margin: 0 0 15px 0;
+    }
+
+    h4{
+        font-size: 16px;
+        font-family: 'Overpass', sans-serif;
+        margin: 0 0 15px 0;
+        font-size: 20;
+        line-height: 25px;
+        color: $LightGrey;
+    }
+
+    ol{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0 0 25px 0;
+
+        li button{
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: $DarkBlue;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            color: $LightGrey;
+            font-family: 'Overpass', sans-serif;
+            outline: none;
+            border:none ;
+            transition: ease-in-out .3s;
+        }
+    }
+
+    li button:hover{
+        background-color: $Orange;
+        color: $White;
+    }
+
+    .active{
+        background-color: $LightGrey;
+        color: white;
+    }
+
+    #submitBtn{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        height: 50px;
+        border-radius: 30px;
+        color: $White;
+        background-color: $Orange;
+        outline: none;
+        font-size: 20px;
+        letter-spacing: 3px;
+        transition: ease-in-out .3s;
+    }
+    #submitBtn:hover{
+        background-color: $White;
+        color: $Orange;
+    }
+
+
+}
+
+
+
+//Submit design
+
+.hidden{
+    visibility: hidden;
+}
+.submit_card{
+    width: 420px;
+    height: 420px;
+    background: rgb(37,41,52);
+    background: linear-gradient(180deg, rgba(37,41,52,1) 30%, rgba(25,29,40,1) 100%);
+    border-radius: 35px;
+    margin: 20px;
+    position: absolute;
+    z-index: 100;
+  
+}
+
+.submit_card_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+
+    .svg_illustration{
+        margin-top: 20px;
+    }
+    
+    .num_selected{
+        margin-top: 20px;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        color: $Orange;
+        background-color: $DarkBlue;
+        height: 33px;
+        width: 175px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h2{
+        margin:0 20px 0 20px ;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    h4{
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        margin-top: 20px;
+        color: $LightGrey;
+    }
+}
+
+
+@media screen and (width:375px) {
+    .card_container{
+        background-color: red;
+    }
+}
